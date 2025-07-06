@@ -1,14 +1,14 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+/* eslint-disable @typescript-eslint/no-require-imports */
+import type { Config } from "tailwindcss"
+
+const config: Config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-    './*.{js,ts,jsx,tsx,mdx}',
-    './src/components/ui/**/*.{ts,tsx}', // Added for shadcn/ui components
-    './src/lib/utils.{ts,tsx}' 
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "*.{js,ts,jsx,tsx,mdx}",
   ],
   prefix: "",
   theme: {
@@ -27,7 +27,7 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#548835",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -54,6 +54,44 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        green: {
+          50: "#f0f9f0",
+          100: "#dcf2dc",
+          200: "#bae5ba",
+          300: "#8dd48d",
+          400: "#7ED957",
+          500: "#548835",
+          600: "#3f6b28",
+          700: "#335523",
+          800: "#2b4420",
+          900: "#25391e",
+        },
+        orange: {
+          DEFAULT: "#FECA1F",
+          50: "#fef9e7",
+          100: "#fef2c0",
+          200: "#fde68a",
+          300: "#fcd34d",
+          400: "#FECA1F",
+          500: "#f59e0b",
+          600: "#d97706",
+          700: "#b45309",
+          800: "#92400e",
+          900: "#78350f",
+        },
+        yellow: {
+          DEFAULT: "#FFE500",
+          50: "#fffbeb",
+          100: "#fef3c7",
+          200: "#fde68a",
+          300: "#fcd34d",
+          400: "#FFE500",
+          500: "#f59e0b",
+          600: "#d97706",
+          700: "#b45309",
+          800: "#92400e",
+          900: "#78350f",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -77,4 +115,6 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+} satisfies Config
+
+export default config
