@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -58,7 +57,7 @@ export function CategoriesSection() {
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          {categories.map((category, index) => (
+          {categories.map((category) => (
             <Card 
               key={category.id}
               className={`border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden ${category.gradient} bg-opacity-10 dark:bg-opacity-20`}

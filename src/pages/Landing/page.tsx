@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 
 import { useState, useEffect } from "react"
@@ -6,10 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import {
-  Menu,
-  X,
-  Sun,
-  Moon,
   Heart,
   Users,
   Shield,
@@ -20,22 +15,14 @@ import {
   ChevronUp,
   Star,
   ArrowRight,
-  Phone,
-  Mail,
   MapPin,
-  Facebook,
-  Twitter,
-  Instagram,
-  Youtube,
 } from "lucide-react"
 
 import { CategoriesSection } from "@/components/Landing/categories-section"
 
 export default function BaikBarengLanding() {
 
-  const [isDark, setIsDark] = useState(false)
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState("hero")
+  const [isDark] = useState(false)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   useEffect(() => {
@@ -73,27 +60,6 @@ export default function BaikBarengLanding() {
       icon: Heart,
       title: "Bantuan 24/7",
       description: "Tim support siap membantu Anda kapan saja melalui berbagai channel komunikasi.",
-    },
-  ]
-
-  const products = [
-    {
-      title: "Bantuan Pangan Non Tunai",
-      description: "Program bantuan pangan untuk keluarga kurang mampu dengan sistem kartu elektronik.",
-      image: "/Images/Placeholder/avatar.png?height=200&width=300",
-      badge: "Populer",
-    },
-    {
-      title: "Program Keluarga Harapan",
-      description: "Bantuan tunai bersyarat untuk keluarga miskin dengan komponen kesehatan dan pendidikan.",
-      image: "/Images/Placeholder/avatar.png?height=200&width=300",
-      badge: "Terbaru",
-    },
-    {
-      title: "Bantuan Langsung Tunai",
-      description: "Bantuan tunai langsung untuk masyarakat terdampak situasi darurat atau bencana.",
-      image: "/Images/Placeholder/avatar.png?height=200&width=300",
-      badge: "Darurat",
     },
   ]
 
