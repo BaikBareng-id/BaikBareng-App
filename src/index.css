@@ -59,12 +59,54 @@
 }
 
 /* Custom animations */
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
+@keyframes float-slow {
+  0%,
   100% {
-    transform: translateX(-100%);
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+@keyframes float-medium {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(-3deg);
+  }
+}
+
+@keyframes float-fast {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
   }
 }
 
@@ -79,59 +121,44 @@
   }
 }
 
-.animate-marquee {
-  animation: marquee 20s linear infinite;
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 4s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-fast 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
 }
 
 .animate-fade-in-up {
   animation: fade-in-up 0.8s ease-out;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+.delay-100 {
+  animation-delay: 0.1s;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
+.delay-200 {
+  animation-delay: 0.2s;
 }
 
-::-webkit-scrollbar-track {
-  @apply bg-gray-100 dark:bg-gray-800;
+.delay-400 {
+  animation-delay: 0.4s;
 }
 
-::-webkit-scrollbar-thumb {
-  @apply bg-green-600 rounded-full;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-green-700;
-}
-
-
-@keyframes marquee {
-  0% { transform: translateX(0%) }
-  100% { transform: translateX(-100%) }
-}
-
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-marquee {
-  animation: marquee 20s linear infinite;
-}
-
-.animate-fade-in-up {
-  animation: fade-in-up 0.8s ease-out;
+.delay-1000 {
+  animation-delay: 1s;
 }
 
 

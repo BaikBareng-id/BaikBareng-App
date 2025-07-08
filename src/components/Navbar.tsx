@@ -8,8 +8,11 @@ import {
   Heart,
 } from "lucide-react"
 import ModeToggle from "./theme-toggle"
+import { useNavigate } from "react-router"
 
 export default function Navbar() {
+
+  const navigate = useNavigate()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navLinks = [
@@ -45,7 +48,7 @@ export default function Navbar() {
 
             <ModeToggle />
 
-            <Button className="bg-green-600 hover:bg-green-700 text-white">Daftar Sekarang</Button>
+            <Button className="bg-green-600 hover:bg-green-700 text-white" onClick={() => navigate("/login")}>Daftar Sekarang</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -71,7 +74,7 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <Button className="bg-green-600 hover:bg-green-700 text-white w-full">Daftar Sekarang</Button>
+              <Button className="bg-green-600 hover:bg-green-700 text-white w-full" onClick={() => navigate("/login")}>Daftar Sekarang</Button>
             </div>
           </div>
         )}

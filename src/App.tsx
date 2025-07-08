@@ -21,6 +21,15 @@ import LoadingScreen from "./pages/Utility/LoadingScreen";
 // Pages
 
 import LandingPage from "@/pages/Landing/page";
+
+
+// Auth Pages
+
+import RegisterPage from "./pages/Auth/Register";
+import LoginPage from "./pages/Auth/Login";
+import ForgotPasswordPage from "./pages/Auth/Forgot-Password";
+
+
 function App() {
 
   const [loading, setLoading] = useState(true);
@@ -48,9 +57,14 @@ function App() {
               
                 <Route index element={<LandingPage/>} />
 
-                <Route path="*" element={<NotFoundPage />} />
-
             </Route>
+
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
+            <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+
+
+            <Route path="*" element={<NotFoundPage />} />
 
           </Routes>
 
