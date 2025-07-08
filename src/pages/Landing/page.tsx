@@ -29,7 +29,10 @@ import {
   Youtube,
 } from "lucide-react"
 
+import { CategoriesSection } from "@/components/Landing/categories-section"
+
 export default function BaikBarengLanding() {
+
   const [isDark, setIsDark] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState("hero")
@@ -77,19 +80,19 @@ export default function BaikBarengLanding() {
     {
       title: "Bantuan Pangan Non Tunai",
       description: "Program bantuan pangan untuk keluarga kurang mampu dengan sistem kartu elektronik.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/Images/Placeholder/avatar.png?height=200&width=300",
       badge: "Populer",
     },
     {
       title: "Program Keluarga Harapan",
       description: "Bantuan tunai bersyarat untuk keluarga miskin dengan komponen kesehatan dan pendidikan.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/Images/Placeholder/avatar.png?height=200&width=300",
       badge: "Terbaru",
     },
     {
       title: "Bantuan Langsung Tunai",
       description: "Bantuan tunai langsung untuk masyarakat terdampak situasi darurat atau bencana.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/Images/Placeholder/avatar.png?height=200&width=300",
       badge: "Darurat",
     },
   ]
@@ -100,21 +103,21 @@ export default function BaikBarengLanding() {
       location: "Jakarta Timur",
       text: "BaikBareng sangat membantu keluarga saya. Prosesnya mudah dan bantuan cepat sampai.",
       rating: 5,
-      avatar: "/placeholder.svg?height=60&width=60",
+      avatar: "/Images/Placeholder/avatar.png?height=60&width=60",
     },
     {
       name: "Bapak Ahmad Hidayat",
       location: "Surabaya",
       text: "Aplikasi yang sangat user-friendly. Anak saya yang masih SMA bisa menggunakannya dengan mudah.",
       rating: 5,
-      avatar: "/placeholder.svg?height=60&width=60",
+      avatar: "/Images/Placeholder/avatar.png?height=60&width=60",
     },
     {
       name: "Ibu Ratna Sari",
       location: "Bandung",
       text: "Pelayanan customer service sangat responsif. Terima kasih BaikBareng!",
       rating: 5,
-      avatar: "/placeholder.svg?height=60&width=60",
+      avatar: "/Images/Placeholder/avatar.png?height=60&width=60",
     },
   ]
 
@@ -143,145 +146,30 @@ export default function BaikBarengLanding() {
 
   const developers = [
     {
-      name: "Tim Kementerian Sosial RI",
-      role: "Koordinator Program",
-      image: "/placeholder.svg?height=100&width=100",
+      name: "Stanley Nathanael Wijaya",
+      role: "Orang Biasa",
+      image: "/Images/Team/stanley.png",
     },
     {
-      name: "Direktorat Jenderal Perlindungan Sosial",
-      role: "Pengembang Kebijakan",
-      image: "/placeholder.svg?height=100&width=100",
+      name: "Cathlyn Shanice Dharmawan",
+      role: "Orang Biasa",
+      image: "/Images/Placeholder/avatar.png?height=100&width=100",
     },
     {
-      name: "Tim IT Kemensos",
-      role: "Pengembang Teknologi",
-      image: "/placeholder.svg?height=100&width=100",
+      name: "Muhammad Zidan Fatoni",
+      role: "Orang Biasa",
+      image: "/Images/Placeholder/avatar.png?height=100&width=100",
+    },
+    {
+      name: "Clarissa Aditjakra",
+      role: "Orang Biasa",
+      image: "/Images/Placeholder/avatar.png?height=100&width=100",
     },
   ]
 
   return (
 
     <div className={`min-h-screen transition-colors duration-300 ${isDark ? "dark" : ""}`}>
-
-      {/* Batik Pattern Background */}
-      {/* <div className="fixed inset-0 opacity-5 dark:opacity-10 pointer-events-none">
-        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern id="batik" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-              <circle cx="25" cy="25" r="8" fill="currentColor" opacity="0.3" />
-              <circle cx="75" cy="75" r="8" fill="currentColor" opacity="0.3" />
-              <polygon points="50,10 60,30 40,30" fill="currentColor" opacity="0.2" />
-              <polygon points="50,90 60,70 40,70" fill="currentColor" opacity="0.2" />
-              <rect x="10" y="45" width="20" height="10" fill="currentColor" opacity="0.2" />
-              <rect x="70" y="45" width="20" height="10" fill="currentColor" opacity="0.2" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#batik)" className="text-green-600" />
-        </svg>
-      </div> */}
-
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-green-600 to-green-700 rounded-lg flex items-center justify-center">
-                <Heart className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gray-900 dark:text-white">BaikBareng</span>
-            </div>
-
-            {/* Desktop Menu */}
-            <div className="hidden md:flex items-center space-x-8">
-              <a
-                href="#hero"
-                className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
-              >
-                Beranda
-              </a>
-              <a
-                href="#about"
-                className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
-              >
-                Tentang
-              </a>
-              <a
-                href="#features"
-                className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
-              >
-                Fitur
-              </a>
-              <a
-                href="#products"
-                className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
-              >
-                Program
-              </a>
-              <a
-                href="#contact"
-                className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
-              >
-                Kontak
-              </a>
-
-              <Button variant="ghost" size="sm" onClick={() => setIsDark(!isDark)} className="p-2">
-                {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-              </Button>
-
-              <Button className="bg-green-600 hover:bg-green-700 text-white">Daftar Sekarang</Button>
-            </div>
-
-            {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center space-x-2">
-              <Button variant="ghost" size="sm" onClick={() => setIsDark(!isDark)} className="p-2">
-                {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-              </Button>
-              <Button variant="ghost" size="sm" onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2">
-                {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-              </Button>
-            </div>
-          </div>
-
-          {/* Mobile Menu */}
-          {isMenuOpen && (
-            <div className="md:hidden py-4 border-t border-gray-200 dark:border-gray-700">
-              <div className="flex flex-col space-y-4">
-                <a
-                  href="#hero"
-                  className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
-                >
-                  Beranda
-                </a>
-                <a
-                  href="#about"
-                  className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
-                >
-                  Tentang
-                </a>
-                <a
-                  href="#features"
-                  className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
-                >
-                  Fitur
-                </a>
-                <a
-                  href="#products"
-                  className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
-                >
-                  Program
-                </a>
-                <a
-                  href="#contact"
-                  className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
-                >
-                  Kontak
-                </a>
-                <Button className="bg-green-600 hover:bg-green-700 text-white w-full">Daftar Sekarang</Button>
-              </div>
-            </div>
-          )}
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <section
@@ -341,7 +229,7 @@ export default function BaikBarengLanding() {
             <div className="relative">
               <div className="relative z-10">
                 <img
-                  src="/placeholder.svg?height=600&width=500"
+                  src="/Images/Landing/hero.png?height=600&width=500"
                   alt="BaikBareng App Interface"
                   width={500}
                   height={600}
@@ -398,7 +286,7 @@ export default function BaikBarengLanding() {
 
             <div className="relative">
               <img
-                src="/placeholder.svg?height=400&width=500"
+                src="/Images/Logo.png?height=100&width=100"
                 alt="About BaikBareng"
                 width={500}
                 height={400}
@@ -525,46 +413,7 @@ export default function BaikBarengLanding() {
         </div>
       </section>
 
-      {/* Products Section */}
-      <section id="products" className="py-20 bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Program Bantuan Sosial
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Berbagai program bantuan sosial yang dapat Anda akses melalui BaikBareng
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {products.map((product, index) => (
-              <Card
-                key={index}
-                className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300 group"
-              >
-                <div className="relative">
-                  <img
-                    src={product.image || "/placeholder.svg"}
-                    alt={product.title}
-                    width={300}
-                    height={200}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <Badge className="absolute top-4 left-4 bg-green-600 text-white">{product.badge}</Badge>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-xl text-gray-900 dark:text-white">{product.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">{product.description}</p>
-                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white">Pelajari Lebih Lanjut</Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      <CategoriesSection/>
 
       {/* Developers Section */}
       <section className="py-20 bg-white dark:bg-gray-900">
@@ -576,12 +425,12 @@ export default function BaikBarengLanding() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {developers.map((dev, index) => (
               <Card key={index} className="text-center p-8 border-none shadow-lg">
                 <div className="mb-6">
                   <img
-                    src={dev.image || "/placeholder.svg"}
+                    src={dev.image || "/Images/Placeholder/avatar.png"}
                     alt={dev.name}
                     width={100}
                     height={100}
@@ -618,7 +467,7 @@ export default function BaikBarengLanding() {
                   <p className="text-gray-600 dark:text-gray-300 italic">"{testimonial.text}"</p>
                   <div className="flex items-center space-x-3">
                     <img
-                      src={testimonial.avatar || "/placeholder.svg"}
+                      src={testimonial.avatar || "/Images/Placeholder/avatar.png"}
                       alt={testimonial.name}
                       width={60}
                       height={60}
@@ -698,108 +547,6 @@ export default function BaikBarengLanding() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer id="contact" className="bg-gray-900 dark:bg-black text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-br from-green-600 to-green-700 rounded-lg flex items-center justify-center">
-                  <Heart className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-bold">BaikBareng</span>
-              </div>
-              <p className="text-gray-400">
-                Platform bantuan sosial digital resmi Kementerian Sosial Republik Indonesia
-              </p>
-              <div className="flex space-x-4">
-                <Facebook className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer" />
-                <Twitter className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer" />
-                <Instagram className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer" />
-                <Youtube className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer" />
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Layanan</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Bantuan Pangan
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Program Keluarga Harapan
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Bantuan Langsung Tunai
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Bantuan Sosial Lainnya
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Bantuan</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Pusat Bantuan
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Panduan Pengguna
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Hubungi Kami
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Kontak</h3>
-              <div className="space-y-3 text-gray-400">
-                <div className="flex items-center space-x-2">
-                  <Phone className="w-5 h-5" />
-                  <span>021-1234-5678</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Mail className="w-5 h-5" />
-                  <span>info@baikbareng.go.id</span>
-                </div>
-                <div className="flex items-start space-x-2">
-                  <MapPin className="w-5 h-5 mt-1" />
-                  <span>
-                    Kementerian Sosial RI
-                    <br />
-                    Jakarta, Indonesia
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 BaikBareng - Kementerian Sosial Republik Indonesia. Semua hak dilindungi.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }

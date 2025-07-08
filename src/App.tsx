@@ -21,8 +21,6 @@ import LoadingScreen from "./pages/Utility/LoadingScreen";
 // Pages
 
 import LandingPage from "@/pages/Landing/page";
-import AboutPage from "./pages/About/page";
-
 function App() {
 
   const [loading, setLoading] = useState(true);
@@ -46,12 +44,9 @@ function App() {
 
           <Routes>
 
-            
-
             <Route path="/" element={<Layout />}>
               
                 <Route index element={<LandingPage/>} />
-                <Route path="/about" element={<AboutPage/>} />
 
                 <Route path="*" element={<NotFoundPage />} />
 
