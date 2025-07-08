@@ -252,7 +252,7 @@ export default function BaikBarengLanding() {
 
             <div className="relative">
               <img
-                src="/Images/Logo.png?height=100&width=100"
+                src="/Images/logo.png?height=100&width=100"
                 alt="About BaikBareng"
                 width={500}
                 height={400}
