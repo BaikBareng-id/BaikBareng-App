@@ -28,6 +28,7 @@ import LandingPage from "@/pages/Landing/page";
 import RegisterPage from "./pages/Auth/Register";
 import LoginPage from "./pages/Auth/Login";
 import ForgotPasswordPage from "./pages/Auth/Forgot-Password";
+import ChatWidget from "./components/ui/ChatWidget";
 
 
 function App() {
@@ -74,6 +75,8 @@ function App() {
 
       <Toaster position="top-center" />
 
+      <ChatWidget />
+      
     </BrowserRouter>
 
   );
