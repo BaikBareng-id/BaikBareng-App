@@ -12,7 +12,7 @@ import Layout from "@/layouts/root-layout";
 
 // Utility Pages / Components
 
-import ScrollToTop from "./utility/ScrollToTop";
+// import ScrollToTop from "./utility/ScrollToTop";
 import CustomCursor from "./utility/CustomCursor";
 import ScrollToTopFunction from "./utility/ScrollToTopFunction";
 import NotFoundPage from "./pages/Utility/NotFound404";
@@ -22,6 +22,9 @@ import LoadingScreen from "./pages/Utility/LoadingScreen";
 
 import LandingPage from "@/pages/Landing/page";
 
+// Bansos
+
+import BansosPage from "./pages/Bansos/page";
 
 // Auth Pages
 
@@ -41,7 +44,7 @@ function App() {
 
     <BrowserRouter>
       <ScrollToTopFunction />
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <CustomCursor />
 
       {loading && (
@@ -57,6 +60,8 @@ function App() {
             <Route path="/" element={<Layout />}>
               
                 <Route index element={<LandingPage/>} />
+
+                <Route path="/bansos" element={<BansosPage/>} />
 
             </Route>
 

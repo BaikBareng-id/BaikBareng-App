@@ -16,11 +16,11 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navLinks = [
-    { href: "#hero", label: "Beranda" },
-    { href: "#about", label: "Tentang" },
+    { href: "/", label: "Beranda" },
+    { href: "/bansos", label: "Program Bansos" },
     { href: "#features", label: "Fitur" },
     { href: "#products", label: "Program" },
-    { href: "#contact", label: "Kontak" },
+    { href: "/contact", label: "Kontak" },
   ]
 
   return (
