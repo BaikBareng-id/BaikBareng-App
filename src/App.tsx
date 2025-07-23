@@ -40,8 +40,11 @@ import ArticleDetailPage from "./pages/Education/article";
 import VideoDetailPage from "./pages/Education/video-tutorial";
 import PartnersPage from "./pages/Utility/Partner";
 
+import ConnectWalletPage from "./pages/Utility/Connect-Wallet";
+
 // Auth Pages
 
+import AdminLoginPage from "./pages/Auth/Admin-Login";
 import RegisterPage from "./pages/Auth/Register";
 import LoginPage from "./pages/Auth/Login";
 import ForgotPasswordPage from "./pages/Auth/Forgot-Password";
@@ -93,6 +96,7 @@ function App() {
 
                 {/* Utility Pages */}
 
+                <Route path="/connect" element={<ConnectWalletPage/>} />
                 <Route path="/contact" element={<ContactPage/>} />
                 <Route path="/legal" element={<LegalPage/>} />
 
@@ -111,6 +115,7 @@ function App() {
 
             {/* Auth Pages */}
 
+            <Route path="/admin-login" element={<AdminLoginPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/forgot-password" element={<ForgotPasswordPage />} />
