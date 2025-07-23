@@ -40,7 +40,7 @@ const partners = [
     type: "Pemerintah",
     description:
       "Kementerian Sosial Republik Indonesia sebagai induk organisasi BaikBareng yang bertanggung jawab atas kebijakan dan implementasi program bantuan sosial nasional.",
-    logo: "/placeholder.svg?height=100&width=200&text=Kemensos+RI",
+    logo: "/Images/Placeholder/logo.png?height=100&width=200&text=Kemensos+RI",
     website: "https://kemsos.go.id",
     email: "info@kemsos.go.id",
     phone: "021-3103591",
@@ -57,7 +57,7 @@ const partners = [
     type: "Pemerintah",
     description:
       "Kementerian Dalam Negeri berperan dalam verifikasi data kependudukan dan administrasi untuk memastikan akurasi data penerima bantuan sosial.",
-    logo: "/placeholder.svg?height=100&width=200&text=Kemendagri",
+    logo: "/Images/Placeholder/logo.png?height=100&width=200&text=Kemendagri",
     website: "https://kemendagri.go.id",
     email: "info@kemendagri.go.id",
     phone: "021-3842222",
@@ -74,7 +74,7 @@ const partners = [
     type: "Pemerintah",
     description:
       "Bank sentral Indonesia yang mendukung implementasi sistem pembayaran digital untuk penyaluran bantuan sosial melalui BaikBareng.",
-    logo: "/placeholder.svg?height=100&width=200&text=Bank+Indonesia",
+    logo: "/Images/Placeholder/logo.png?height=100&width=200&text=Bank+Indonesia",
     website: "https://bi.go.id",
     email: "bicara@bi.go.id",
     phone: "021-2981-1000",
@@ -92,7 +92,7 @@ const partners = [
     type: "Swasta",
     description:
       "Penyedia infrastruktur telekomunikasi dan teknologi informasi yang mendukung konektivitas platform BaikBareng ke seluruh Indonesia.",
-    logo: "/placeholder.svg?height=100&width=200&text=Telkom+Indonesia",
+    logo: "/Images/Placeholder/logo.png?height=100&width=200&text=Telkom+Indonesia",
     website: "https://telkom.co.id",
     email: "info@telkom.co.id",
     phone: "021-52903000",
@@ -109,7 +109,7 @@ const partners = [
     type: "Swasta",
     description:
       "Bank terbesar di Indonesia yang menyediakan layanan perbankan dan sistem pembayaran untuk penyaluran bantuan sosial BaikBareng.",
-    logo: "/placeholder.svg?height=100&width=200&text=Bank+Mandiri",
+    logo: "/Images/Placeholder/logo.png?height=100&width=200&text=Bank+Mandiri",
     website: "https://bankmandiri.co.id",
     email: "mandiricare@bankmandiri.co.id",
     phone: "14000",
@@ -127,7 +127,7 @@ const partners = [
     type: "Media",
     description:
       "Televisi Republik Indonesia sebagai media partner utama untuk sosialisasi dan edukasi program BaikBareng kepada masyarakat luas.",
-    logo: "/placeholder.svg?height=100&width=200&text=TVRI",
+    logo: "/Images/Placeholder/logo.png?height=100&width=200&text=TVRI",
     website: "https://tvri.go.id",
     email: "info@tvri.go.id",
     phone: "021-5734567",
@@ -144,7 +144,7 @@ const partners = [
     type: "Media",
     description:
       "Grup media terbesar Indonesia yang membantu penyebaran informasi dan edukasi tentang program bantuan sosial melalui BaikBareng.",
-    logo: "/placeholder.svg?height=100&width=200&text=Kompas+Media",
+    logo: "/Images/Placeholder/logo.png?height=100&width=200&text=Kompas+Media",
     website: "https://kompas.com",
     email: "redaksi@kompas.com",
     phone: "021-5347710",
@@ -162,7 +162,7 @@ const partners = [
     type: "NGO",
     description:
       "Lembaga amil zakat nasional yang berkolaborasi dalam penyaluran bantuan sosial dan pemberdayaan masyarakat melalui platform BaikBareng.",
-    logo: "/placeholder.svg?height=100&width=200&text=Rumah+Zakat",
+    logo: "/Images/Placeholder/logo.png?height=100&width=200&text=Rumah+Zakat",
     website: "https://rumahzakat.org",
     email: "info@rumahzakat.org",
     phone: "022-7335566",
@@ -179,7 +179,7 @@ const partners = [
     type: "NGO",
     description:
       "Lembaga sosial yang fokus pada pemberdayaan masyarakat dan pengentasan kemiskinan, berpartner dengan BaikBareng dalam program bantuan sosial.",
-    logo: "/placeholder.svg?height=100&width=200&text=Dompet+Dhuafa",
+    logo: "/Images/Placeholder/logo.png?height=100&width=200&text=Dompet+Dhuafa",
     website: "https://dompetdhuafa.org",
     email: "info@dompetdhuafa.org",
     phone: "021-7918-7918",
@@ -197,7 +197,7 @@ const partners = [
     type: "Swasta",
     description:
       "Penyedia solusi cloud computing dan teknologi yang mendukung infrastruktur digital platform BaikBareng dengan keamanan tingkat enterprise.",
-    logo: "/placeholder.svg?height=100&width=200&text=Microsoft",
+    logo: "/Images/Placeholder/logo.png?height=100&width=200&text=Microsoft",
     website: "https://microsoft.com/id-id",
     email: "info@microsoft.com",
     phone: "021-2995-7888",
@@ -214,7 +214,7 @@ const partners = [
     type: "Swasta",
     description:
       "Partner teknologi yang menyediakan layanan cloud, analytics, dan AI untuk meningkatkan efisiensi dan akurasi sistem BaikBareng.",
-    logo: "/placeholder.svg?height=100&width=200&text=Google",
+    logo: "/Images/Placeholder/logo.png?height=100&width=200&text=Google",
     website: "https://google.co.id",
     email: "support@google.com",
     phone: "021-2995-7000",
@@ -232,7 +232,7 @@ const partners = [
     type: "Swasta",
     description:
       "Bank terbesar kedua di Indonesia yang menyediakan layanan perbankan dan jaringan ATM untuk kemudahan akses bantuan sosial BaikBareng.",
-    logo: "/placeholder.svg?height=100&width=200&text=Bank+BRI",
+    logo: "/Images/Placeholder/logo.png?height=100&width=200&text=Bank+BRI",
     website: "https://bri.co.id",
     email: "callbri@bri.co.id",
     phone: "14017",
@@ -392,7 +392,7 @@ export default function PartnersPage() {
                     <CardHeader className="text-center pb-4">
                       <div className="relative mx-auto mb-4">
                         <img
-                          src={partner.logo || "/placeholder.svg"}
+                          src={partner.logo || "/Images/Placeholder/logo.png"}
                           alt={partner.name}
                           width={120}
                           height={60}
@@ -473,7 +473,7 @@ export default function PartnersPage() {
                     <CardHeader className="text-center pb-4">
                       <div className="relative mx-auto mb-4">
                         <img
-                          src={partner.logo || "/placeholder.svg"}
+                          src={partner.logo || "/Images/Placeholder/logo.png"}
                           alt={partner.name}
                           width={120}
                           height={60}

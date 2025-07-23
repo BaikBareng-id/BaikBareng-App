@@ -23,6 +23,7 @@ import {
   AlertCircle,
   Info,
 } from "lucide-react"
+import { useNavigate } from "react-router"
 
 // Mock data for bansos programs
 const bansosPrograms = [
@@ -213,6 +214,8 @@ const sortOptions = [
 ]
 
 export default function BansosPage() {
+
+  const navigate = useNavigate()
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("Semua Kategori")
   const [selectedStatus, setSelectedStatus] = useState("Semua Status")
@@ -537,6 +540,7 @@ export default function BansosPage() {
                         <Button
                           className="flex-1 bg-green-600 hover:bg-green-700 text-white"
                           disabled={program.status === "Nonaktif"}
+                          onClick={() => navigate("/bansos/1")}
                         >
                           {program.status === "Nonaktif" ? "Tidak Tersedia" : "Daftar Sekarang"}
                         </Button>

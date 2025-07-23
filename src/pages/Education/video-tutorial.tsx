@@ -32,7 +32,7 @@ const video = {
   likes: "2.1K",
   publishDate: "2024-01-12",
   category: "Tutorial Platform",
-  thumbnail: "/placeholder.svg?height=400&width=800&text=BaikBareng+Tutorial+Video",
+  thumbnail: "/Images/Placeholder/logo.png?height=400&width=800&text=BaikBareng+Tutorial+Video",
   difficulty: "Pemula",
   tags: ["Tutorial", "Pendaftaran", "BaikBareng", "Bantuan Sosial", "Platform"],
   videoUrl: "https://example.com/video.mp4", // In real app, this would be actual video URL
@@ -83,21 +83,21 @@ const relatedVideos = [
     title: "Mengelola Keuangan Keluarga dengan Aplikasi Digital",
     category: "Literasi Keuangan",
     duration: "12:30",
-    thumbnail: "/placeholder.svg?height=150&width=200&text=Family+Finance",
+    thumbnail: "/Images/Placeholder/logo.png?height=150&width=200&text=Family+Finance",
   },
   {
     id: 3,
     title: "Keamanan Transaksi Digital: Tips dan Trik",
     category: "Digital Banking",
     duration: "15:20",
-    thumbnail: "/placeholder.svg?height=150&width=200&text=Digital+Security",
+    thumbnail: "/Images/Placeholder/logo.png?height=150&width=200&text=Digital+Security",
   },
   {
     id: 4,
     title: "Investasi Reksadana untuk Pemula",
     category: "Investasi Dasar",
     duration: "18:15",
-    thumbnail: "/placeholder.svg?height=150&width=200&text=Mutual+Funds",
+    thumbnail: "/Images/Placeholder/logo.png?height=150&width=200&text=Mutual+Funds",
   },
 ]
 
@@ -131,7 +131,7 @@ export default function VideoDetailPage() {
             <div className="mb-8">
               <div className="relative aspect-video bg-black rounded-xl overflow-hidden shadow-2xl">
                 <img
-                  src={video.thumbnail || "/placeholder.svg"}
+                  src={video.thumbnail || "/Images/Placeholder/logo.png"}
                   alt={video.title}
                   width={800}
                   height={450}
@@ -325,7 +325,7 @@ export default function VideoDetailPage() {
                         <div className="flex space-x-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group">
                           <div className="relative flex-shrink-0">
                             <img
-                              src={relatedVideo.thumbnail || "/placeholder.svg"}
+                              src={relatedVideo.thumbnail || "/Images/Placeholder/logo.png"}
                               alt={relatedVideo.title}
                               width={80}
                               height={60}

@@ -43,7 +43,7 @@ const articles = [
     likes: "1.2K",
     publishDate: "2024-01-15",
     author: "Tim Edukasi BaikBareng",
-    image: "/placeholder.svg?height=200&width=300&text=Financial+Literacy",
+    image: "/Images/Placeholder/logo.png?height=200&width=300&text=Financial+Literacy",
     featured: true,
     difficulty: "Pemula",
   },
@@ -58,7 +58,7 @@ const articles = [
     likes: "890",
     publishDate: "2024-01-10",
     author: "Dr. Sari Wijayanti",
-    image: "/placeholder.svg?height=200&width=300&text=Social+Assistance",
+    image: "/Images/Placeholder/logo.png?height=200&width=300&text=Social+Assistance",
     featured: false,
     difficulty: "Pemula",
   },
@@ -73,7 +73,7 @@ const articles = [
     likes: "1.8K",
     publishDate: "2024-01-08",
     author: "Ahmad Hidayat, S.E.",
-    image: "/placeholder.svg?height=200&width=300&text=Digital+Banking",
+    image: "/Images/Placeholder/logo.png?height=200&width=300&text=Digital+Banking",
     featured: true,
     difficulty: "Pemula",
   },
@@ -88,7 +88,7 @@ const articles = [
     likes: "654",
     publishDate: "2024-01-05",
     author: "Ratna Sari, M.M.",
-    image: "/placeholder.svg?height=200&width=300&text=Investment+Basics",
+    image: "/Images/Placeholder/logo.png?height=200&width=300&text=Investment+Basics",
     featured: false,
     difficulty: "Menengah",
   },
@@ -103,7 +103,7 @@ const articles = [
     likes: "1.1K",
     publishDate: "2024-01-03",
     author: "Budi Santoso, CFP",
-    image: "/placeholder.svg?height=200&width=300&text=Financial+Planning",
+    image: "/Images/Placeholder/logo.png?height=200&width=300&text=Financial+Planning",
     featured: false,
     difficulty: "Menengah",
   },
@@ -118,7 +118,7 @@ const articles = [
     likes: "1.5K",
     publishDate: "2024-01-01",
     author: "Indira Putri, S.E.",
-    image: "/placeholder.svg?height=200&width=300&text=Small+Business",
+    image: "/Images/Placeholder/logo.png?height=200&width=300&text=Small+Business",
     featured: true,
     difficulty: "Menengah",
   },
@@ -134,7 +134,7 @@ const videos = [
     likes: "2.1K",
     publishDate: "2024-01-12",
     category: "Tutorial Platform",
-    thumbnail: "/placeholder.svg?height=200&width=300&text=BaikBareng+Tutorial",
+    thumbnail: "/Images/Placeholder/logo.png?height=200&width=300&text=BaikBareng+Tutorial",
     difficulty: "Pemula",
     featured: true,
   },
@@ -147,7 +147,7 @@ const videos = [
     likes: "1.6K",
     publishDate: "2024-01-10",
     category: "Literasi Keuangan",
-    thumbnail: "/placeholder.svg?height=200&width=300&text=Family+Finance",
+    thumbnail: "/Images/Placeholder/logo.png?height=200&width=300&text=Family+Finance",
     difficulty: "Pemula",
     featured: false,
   },
@@ -161,7 +161,7 @@ const videos = [
     likes: "1.9K",
     publishDate: "2024-01-08",
     category: "Digital Banking",
-    thumbnail: "/placeholder.svg?height=200&width=300&text=Digital+Security",
+    thumbnail: "/Images/Placeholder/logo.png?height=200&width=300&text=Digital+Security",
     difficulty: "Menengah",
     featured: true,
   },
@@ -175,7 +175,7 @@ const videos = [
     likes: "1.3K",
     publishDate: "2024-01-05",
     category: "Investasi Dasar",
-    thumbnail: "/placeholder.svg?height=200&width=300&text=Mutual+Funds",
+    thumbnail: "/Images/Placeholder/logo.png?height=200&width=300&text=Mutual+Funds",
     difficulty: "Menengah",
     featured: false,
   },
@@ -188,7 +188,7 @@ const videos = [
     likes: "1.7K",
     publishDate: "2024-01-03",
     category: "Kewirausahaan",
-    thumbnail: "/placeholder.svg?height=200&width=300&text=Micro+Business",
+    thumbnail: "/Images/Placeholder/logo.png?height=200&width=300&text=Micro+Business",
     difficulty: "Menengah",
     featured: false,
   },
@@ -201,7 +201,7 @@ const videos = [
     likes: "1.1K",
     publishDate: "2024-01-01",
     category: "Teknologi Finansial",
-    thumbnail: "/placeholder.svg?height=200&width=300&text=Fintech+Future",
+    thumbnail: "/Images/Placeholder/logo.png?height=200&width=300&text=Fintech+Future",
     difficulty: "Lanjutan",
     featured: true,
   },
@@ -388,7 +388,7 @@ export default function EducationPage() {
                       >
                         <div className="relative">
                           <img
-                            src={article.image || "/placeholder.svg"}
+                            src={article.image || "/Images/Placeholder/logo.png"}
                             alt={article.title}
                             width={300}
                             height={200}
@@ -462,7 +462,7 @@ export default function EducationPage() {
                       >
                         <div className="relative">
                           <img
-                            src={video.thumbnail || "/placeholder.svg"}
+                            src={video.thumbnail || "/Images/Placeholder/logo.png"}
                             alt={video.title}
                             width={300}
                             height={200}
@@ -541,7 +541,7 @@ export default function EducationPage() {
                     >
                       <div className="relative">
                         <img
-                          src={article.image || "/placeholder.svg"}
+                          src={article.image || "/Images/Placeholder/logo.png"}
                           alt={article.title}
                           width={300}
                           height={200}
@@ -611,7 +611,7 @@ export default function EducationPage() {
                     >
                       <div className="relative">
                         <img
-                          src={video.thumbnail || "/placeholder.svg"}
+                          src={video.thumbnail || "/Images/Placeholder/logo.png"}
                           alt={video.title}
                           width={300}
                           height={200}

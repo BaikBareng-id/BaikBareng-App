@@ -33,7 +33,7 @@ const article = {
   author: "Tim Edukasi BaikBareng",
   authorBio:
     "Tim ahli keuangan dan edukasi dari BaikBareng yang berpengalaman dalam literasi keuangan masyarakat Indonesia.",
-  image: "/placeholder.svg?height=400&width=800&text=Financial+Literacy+Article",
+  image: "/Images/Placeholder/logo.png?height=400&width=800&text=Financial+Literacy+Article",
   difficulty: "Pemula",
   tags: ["Literasi Keuangan", "Budgeting", "Menabung", "Investasi", "Keluarga"],
   content: `
@@ -156,21 +156,21 @@ const relatedArticles = [
     title: "Memahami Program Bantuan Sosial: Hak dan Kewajiban Penerima",
     category: "Bantuan Sosial",
     readTime: "12 menit",
-    image: "/placeholder.svg?height=150&width=200&text=Social+Assistance",
+    image: "/Images/Placeholder/logo.png?height=150&width=200&text=Social+Assistance",
   },
   {
     id: 3,
     title: "Digital Banking untuk Pemula: Panduan Aman Bertransaksi Online",
     category: "Digital Banking",
     readTime: "10 menit",
-    image: "/placeholder.svg?height=150&width=200&text=Digital+Banking",
+    image: "/Images/Placeholder/logo.png?height=150&width=200&text=Digital+Banking",
   },
   {
     id: 4,
     title: "Investasi Sederhana untuk Masyarakat Berpenghasilan Rendah",
     category: "Investasi Dasar",
     readTime: "18 menit",
-    image: "/placeholder.svg?height=150&width=200&text=Investment+Basics",
+    image: "/Images/Placeholder/logo.png?height=150&width=200&text=Investment+Basics",
   },
 ]
 
@@ -263,7 +263,7 @@ export default function ArticleDetailPage() {
             {/* Featured Image */}
             <div className="mb-8">
               <img
-                src={article.image || "/placeholder.svg"}
+                src={article.image || "/Images/Placeholder/logo.png"}
                 alt={article.title}
                 width={800}
                 height={400}
@@ -377,7 +377,7 @@ export default function ArticleDetailPage() {
                       <a key={relatedArticle.id} href={`/education/articles/${relatedArticle.id}`}>
                         <div className="flex space-x-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group">
                           <img
-                            src={relatedArticle.image || "/placeholder.svg"}
+                            src={relatedArticle.image || "/Images/Placeholder/logo.png"}
                             alt={relatedArticle.title}
                             width={60}
                             height={60}
