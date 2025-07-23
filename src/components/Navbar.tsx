@@ -18,8 +18,8 @@ export default function Navbar() {
   const navLinks = [
     { href: "/", label: "Beranda" },
     { href: "/bansos", label: "Program Bansos" },
-    { href: "#features", label: "Fitur" },
-    { href: "#products", label: "Program" },
+    { href: "/features", label: "Semua Fitur" },
+    { href: "/public-data", label: "Data Publik" },
     { href: "/contact", label: "Kontak" },
   ]
 
@@ -27,7 +27,8 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center space-x-2">
+
+          <div className="flex items-center space-x-2" onClick={() => navigate("/")}>
             <div className="w-8 h-8 bg-gradient-to-br from-green-600 to-green-700 rounded-lg flex items-center justify-center">
               <Heart className="w-5 h-5 text-white" />
             </div>

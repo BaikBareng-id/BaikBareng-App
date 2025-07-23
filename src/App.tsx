@@ -22,6 +22,8 @@ import LoadingScreen from "./pages/Utility/LoadingScreen";
 
 import TransparencyPage from "./pages/Public-Transparency/page";
 import LandingPage from "@/pages/Landing/page";
+import AIRecommendationPage from "./pages/AI/recommendation-ai";
+import FeaturesPage from "./pages/Features/page";
 
 // Bansos
 
@@ -79,7 +81,12 @@ function App() {
               
                 <Route index element={<LandingPage/>} />
 
+                {/* AI Pages */}
+
+                <Route path="/bansos-recommendation" element={<AIRecommendationPage/>} />
+
                 <Route path="/public-data" element={<TransparencyPage/>} />
+                <Route path="/features" element={<FeaturesPage/>} />
 
                 <Route path="/bansos" element={<BansosPage/>} />
                 <Route path="/bansos/:id" element={<ProgramDetailPage/>} />
