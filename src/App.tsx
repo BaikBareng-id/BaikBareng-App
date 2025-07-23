@@ -20,11 +20,13 @@ import LoadingScreen from "./pages/Utility/LoadingScreen";
 
 // Pages
 
+import TransparencyPage from "./pages/Public-Transparency/page";
 import LandingPage from "@/pages/Landing/page";
 
 // Bansos
 
 import BansosPage from "./pages/Bansos/page";
+import ProgramDetailPage from "./pages/Bansos/[id]/page";
 
 // Utility Pages
 
@@ -77,7 +79,10 @@ function App() {
               
                 <Route index element={<LandingPage/>} />
 
+                <Route path="/public-data" element={<TransparencyPage/>} />
+
                 <Route path="/bansos" element={<BansosPage/>} />
+                <Route path="/bansos/:id" element={<ProgramDetailPage/>} />
 
                 {/* Utility Pages */}
 
