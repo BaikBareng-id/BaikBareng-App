@@ -26,6 +26,11 @@ import LandingPage from "@/pages/Landing/page";
 
 import BansosPage from "./pages/Bansos/page";
 
+// Utility Pages
+
+import LegalPage from "./pages/Utility/Legal";
+import ContactPage from "./pages/Utility/Contact";
+
 // Auth Pages
 
 import RegisterPage from "./pages/Auth/Register";
@@ -62,6 +67,11 @@ function App() {
                 <Route index element={<LandingPage/>} />
 
                 <Route path="/bansos" element={<BansosPage/>} />
+
+                {/* Utility Pages */}
+
+                <Route path="/contact" element={<ContactPage/>} />
+                <Route path="/legal" element={<LegalPage/>} />
 
             </Route>
 
