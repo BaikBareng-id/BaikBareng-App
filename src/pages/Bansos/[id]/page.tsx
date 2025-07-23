@@ -1,9 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 
 import { useState } from "react"
 import {
-  ArrowLeft,
   Calendar,
   MapPin,
   Users,
@@ -15,9 +13,6 @@ import {
   Phone,
   Mail,
   Globe,
-  Download,
-  Share2,
-  Heart,
   Star,
   ChevronDown,
   ChevronUp,
@@ -165,7 +160,6 @@ export default function ProgramDetailPage() {
   
   const [activeTab, setActiveTab] = useState("overview")
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null)
-  const [isFavorited, setIsFavorited] = useState(false)
 
   const toggleFaq = (index: number) => {
     setExpandedFaq(expandedFaq === index ? null : index)
