@@ -43,6 +43,12 @@ import LoginPage from "./pages/Auth/Login";
 import ForgotPasswordPage from "./pages/Auth/Forgot-Password";
 import ChatWidget from "./components/ui/ChatWidget";
 
+// User Dashboard Pages
+
+import SettingsPage from "./pages/User-Dashboard/Settings/page";
+import ProgramsPage from "./pages/User-Dashboard/Programs/page";
+import DashboardOverview from "./pages/User-Dashboard/overview";
+import DashboardLayout from "./pages/User-Dashboard/layout";
 
 function App() {
 
@@ -84,6 +90,14 @@ function App() {
                 <Route path="/partner" element={<PartnersPage/>} />
 
             </Route>
+
+            {/* User Dashboard */}
+
+            <Route path="/user-dashboard" element={<DashboardLayout children={<DashboardOverview/>}/>} />
+            <Route path="/user-settings" element={<DashboardLayout children={<SettingsPage/>}/>} />
+            <Route path="/user-programs" element={<DashboardLayout children={<ProgramsPage/>}/>} />
+
+            {/* Auth Pages */}
 
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
