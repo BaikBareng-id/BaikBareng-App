@@ -31,6 +31,11 @@ import BansosPage from "./pages/Bansos/page";
 import LegalPage from "./pages/Utility/Legal";
 import ContactPage from "./pages/Utility/Contact";
 
+import EducationPage from "./pages/Education/page";
+import ArticleDetailPage from "./pages/Education/article";
+import VideoDetailPage from "./pages/Education/video-tutorial";
+import PartnersPage from "./pages/Utility/Partner";
+
 // Auth Pages
 
 import RegisterPage from "./pages/Auth/Register";
@@ -72,6 +77,11 @@ function App() {
 
                 <Route path="/contact" element={<ContactPage/>} />
                 <Route path="/legal" element={<LegalPage/>} />
+
+                <Route path="/education" element={<EducationPage/>} />
+                <Route path="/education/articles/:id" element={<ArticleDetailPage/>} />
+                <Route path="/education/videos/:id" element={<VideoDetailPage/>} />
+                <Route path="/partner" element={<PartnersPage/>} />
 
             </Route>
 
