@@ -8,8 +8,11 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Eye, EyeOff, Heart, ArrowLeft, Mail, Lock } from "lucide-react"
+import { useNavigate } from "react-router"
 
 export default function LoginPage() {
+
+  const navigate = useNavigate()
   const [showPassword, setShowPassword] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [formData, setFormData] = useState({
@@ -21,7 +24,12 @@ export default function LoginPage() {
     e.preventDefault()
     setIsLoading(true)
     // Simulate API call
+    
     await new Promise((resolve) => setTimeout(resolve, 2000))
+    if (formData.email === "user@gmail.com" && formData.password === "user123"){
+      navigate("/user-dashboard")
+    }
+    
     setIsLoading(false)
   }
 
