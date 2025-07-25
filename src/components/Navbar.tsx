@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import {
   Menu,
   X,
-  Heart,
 } from "lucide-react"
 import ModeToggle from "./theme-toggle"
 import { useNavigate } from "react-router"
@@ -29,9 +28,15 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
 
           <div className="flex items-center space-x-2" onClick={() => navigate("/")}>
-            <div className="w-8 h-8 bg-gradient-to-br from-green-600 to-green-700 rounded-lg flex items-center justify-center">
+
+            {/* <div className="w-8 h-8 bg-gradient-to-br from-green-600 to-green-700 rounded-lg flex items-center justify-center">
               <Heart className="w-5 h-5 text-white" />
+            </div> */}
+
+            <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+              <img src="/Images/logo.png" alt="Heart Icon" className="w-10 h-10" />
             </div>
+
             <span className="text-xl font-bold text-gray-900 dark:text-white">BaikBareng</span>
           </div>
 
