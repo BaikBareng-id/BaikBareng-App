@@ -32,7 +32,7 @@ const steps = [
       'Klik tombol "Daftar" atau "Register"',
     ],
     estimatedTime: "2 menit",
-    image: "/placeholder.svg?height=300&width=500&text=IDRX+Website",
+    image: "/Images/Placeholder/idrx.png?height=300&width=500&text=IDRX+Website",
   },
   {
     id: 2,
@@ -46,7 +46,7 @@ const steps = [
       "Verifikasi email melalui link yang dikirim",
     ],
     estimatedTime: "3 menit",
-    image: "/placeholder.svg?height=300&width=500&text=Email+Login+Form",
+    image: "/Images/Placeholder/idrx.png?height=300&width=500&text=Email+Login+Form",
   },
   {
     id: 3,
@@ -60,7 +60,7 @@ const steps = [
       "Tunggu proses verifikasi otomatis",
     ],
     estimatedTime: "5 menit",
-    image: "/placeholder.svg?height=300&width=500&text=ID+Card+Scanner",
+    image: "/Images/Placeholder/idrx.png?height=300&width=500&text=ID+Card+Scanner",
   },
   {
     id: 4,
@@ -74,7 +74,7 @@ const steps = [
       "Proses akan otomatis mencocokkan dengan foto KTP",
     ],
     estimatedTime: "3 menit",
-    image: "/placeholder.svg?height=300&width=500&text=Face+Recognition",
+    image: "/Images/Placeholder/idrx.png?height=300&width=500&text=Face+Recognition",
   },
   {
     id: 5,
@@ -88,7 +88,7 @@ const steps = [
       "Simpan informasi login dengan aman",
     ],
     estimatedTime: "1 menit",
-    image: "/placeholder.svg?height=300&width=500&text=Wallet+Success",
+    image: "/Images/Placeholder/idrx.png?height=300&width=500&text=Wallet+Success",
   },
 ]
 
@@ -310,7 +310,7 @@ export default function ConnectWalletPage() {
                       {/* Step Image */}
                       <div className="lg:w-96 bg-gray-50">
                         <img
-                          src={step.image || "/placeholder.svg"}
+                          src={step.image || "/Images/Placeholder/idrx.png"}
                           alt={step.title}
                           className="w-full h-64 lg:h-full object-cover"
                         />

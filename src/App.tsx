@@ -32,6 +32,9 @@ import ProgramDetailPage from "./pages/Bansos/[id]/page";
 
 // Utility Pages
 
+import BansosSubmitPage from "./pages/Bansos/submit/page";
+import PartnershipPage from "./pages/Utility/Wants-to-be-partner";
+
 import LegalPage from "./pages/Utility/Legal";
 import ContactPage from "./pages/Utility/Contact";
 
@@ -96,6 +99,7 @@ function App() {
 
                 {/* Utility Pages */}
 
+                <Route path="/bansos/:id/submit" element={<BansosSubmitPage/>} />
                 <Route path="/connect" element={<ConnectWalletPage/>} />
                 <Route path="/contact" element={<ContactPage/>} />
                 <Route path="/legal" element={<LegalPage/>} />
@@ -104,6 +108,7 @@ function App() {
                 <Route path="/education/articles/:id" element={<ArticleDetailPage/>} />
                 <Route path="/education/videos/:id" element={<VideoDetailPage/>} />
                 <Route path="/partner" element={<PartnersPage/>} />
+                <Route path="/partnership" element={<PartnershipPage/>} />
 
             </Route>
 
@@ -119,7 +124,6 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-
 
             <Route path="*" element={<NotFoundPage />} />
 

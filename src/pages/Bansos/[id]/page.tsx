@@ -24,6 +24,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Progress } from "@/components/ui/progress"
 import { Separator } from "@/components/ui/separator"
+import { useNavigate } from "react-router"
 
 // Mock data for program detail
 const programData = {
@@ -158,6 +159,7 @@ const faqs = [
 
 export default function ProgramDetailPage() {
   
+  const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState("overview")
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null)
 
@@ -327,7 +329,7 @@ export default function ProgramDetailPage() {
                   <p className="text-green-100 text-sm mb-4">
                     Batas waktu pendaftaran: {new Date(programData.applicationDeadline).toLocaleDateString("id-ID")}
                   </p>
-                  <Button className="w-full bg-white text-green-600 hover:bg-green-50">
+                  <Button className="w-full bg-white text-green-600 hover:bg-green-50" onClick={() => navigate("/bansos/1/submit")}>
                     <FileText className="h-4 w-4 mr-2" />
                     Ajukan Sekarang
                   </Button>

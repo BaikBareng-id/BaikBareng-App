@@ -67,7 +67,7 @@ const ChatWidget = () => {
       };
 
       setMessages((prev) => [...prev, botMessage]);
-    } catch (error) {
+    } catch {
       setMessages((prev) => [
         ...prev,
         {
@@ -91,7 +91,7 @@ const ChatWidget = () => {
       {/* Bubble Button */}
       <button
         onClick={toggleChat}
-        className="bg-blue-600 text-white rounded-full p-4 shadow-md hover:bg-blue-700 transition"
+        className="bg-green-600 text-white rounded-full p-4 shadow-md hover:bg-green-700 transition"
       >
         💬
       </button>
@@ -104,7 +104,7 @@ const ChatWidget = () => {
                 key={index}
                 className={`text-sm p-2 rounded-md max-w-[70%] ${
                   msg.sender === "user"
-                    ? "bg-blue-100 text-right ml-auto"
+                    ? "bg-green-100 text-right ml-auto"
                     : "bg-gray-100 text-left mr-auto"
                 }`}
               >
@@ -115,7 +115,7 @@ const ChatWidget = () => {
                       href={msg.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-500 underline text-xs"
+                      className="text-green-500 underline text-xs"
                     >
                       Kunjungi tautan
                     </a>
@@ -133,10 +133,10 @@ const ChatWidget = () => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              className="w-full px-3 py-2 border rounded-md text-sm outline-none focus:ring-1 focus:ring-blue-500 text-black"
+              className="w-full px-3 py-2 border rounded-md text-sm outline-none focus:ring-1 focus:ring-green-500 text-black"
             />
             {loading && (
-              <p className="text-xs text-gray-400 mt-1 text-black">
+              <p className="text-xs mt-1 text-black">
                 Mengetik...
               </p>
             )}
