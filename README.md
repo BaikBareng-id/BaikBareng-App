@@ -209,7 +209,7 @@ VITE_SUPABASE_ANON_KEY=
 
 *Overall Database System Flow:*
 <p align="center">
-  <img src="./Images/Diagram" width="700">
+  <img src="./Images/Diagram.jpg" width="700">
 </p>
 
 Diagram ini menunjukkan bagaimana model terhubung menggunakan Diagram ERD
