@@ -144,6 +144,18 @@ VITE_SUPABASE_ANON_KEY=
 
 ---
 
+## 👤 Account Information
+
+> [!TIP]
+> 
+> Untuk testing menuju User Dashboard bisa menggunakan credential berikut untuk sementara
+
+#### User Account
+- **Email**: user@gmail.com
+- **Password**: user123
+
+---
+
 ## 📸 &nbsp;Website Preview
 <table style="width:100%; text-align:center">
     <col width="100%">
